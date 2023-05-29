@@ -1,4 +1,5 @@
 using BackendEvaluation.Infrastructure;
+using BackendEvaluation.Core;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,8 +8,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services
-    .AddInfrastructure();
-    //.AddCore();
+    .AddInfrastructure()
+    .AddCore();
 
 builder.Host.UseSerilog((context, Configuration) => Configuration.ReadFrom.Configuration(context.Configuration));
 

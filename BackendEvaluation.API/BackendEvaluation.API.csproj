@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BackendEvaluation.Core\BackendEvaluation.Core.csproj" />
     <ProjectReference Include="..\BackendEvaluation.Infrastructure\BackendEvaluation.Infrastructure.csproj" />
   </ItemGroup>
 
