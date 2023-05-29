@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "86WngMJeBQPZEs9Sn1mSDPBS//EoYdorqbUpHdnF88Q7kUkEd68F7Ap2M5RDOCZ59HKL1vJe1O9IpAg2Lx/xOQ==",
+  "dgSpecHash": "YfgUaxsjRIaNQxt0dJKZPFujXUBTNiyC+viUSla+LgCjGGJw/CI5K3sHA6eO1iIqaWPyvK8g/TQYRrHKC0LkIg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Application\\BackendEvaluation.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
