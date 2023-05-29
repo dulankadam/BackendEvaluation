@@ -1,0 +1,12 @@
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\bin\Debug\net7.0\BackendEvaluation.Presantation.deps.json
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\bin\Debug\net7.0\BackendEvaluation.Presantation.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\bin\Debug\net7.0\BackendEvaluation.Presantation.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.csproj.AssemblyReference.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.AssemblyInfoInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.AssemblyInfo.cs
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.csproj.CoreCompileInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\refint\BackendEvaluation.Presantation.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\BackendEvaluation.Presantation.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Presantation\obj\Debug\net7.0\ref\BackendEvaluation.Presantation.dll

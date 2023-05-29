@@ -1,0 +1,12 @@
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Infrastructure.deps.json
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Infrastructure.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Infrastructure.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.AssemblyInfo.cs
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\refint\BackendEvaluation.Infrastructure.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\ref\BackendEvaluation.Infrastructure.dll

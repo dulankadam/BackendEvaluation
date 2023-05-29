@@ -1,0 +1,12 @@
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\bin\Debug\net7.0\BackendEvaluation.Domain.deps.json
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\bin\Debug\net7.0\BackendEvaluation.Domain.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\bin\Debug\net7.0\BackendEvaluation.Domain.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.csproj.AssemblyReference.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.AssemblyInfoInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.AssemblyInfo.cs
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\refint\BackendEvaluation.Domain.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\BackendEvaluation.Domain.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Domain\obj\Debug\net7.0\ref\BackendEvaluation.Domain.dll

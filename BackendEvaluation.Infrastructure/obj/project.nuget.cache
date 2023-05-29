@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yZda654qXQTW+rcB27o1qq9dUKV05u739+ebv8pgLDr5F+Ndi1Q2nACGjJWSN69ZY3FoWrqggDf+pLoNcR5LWg==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Infrastructure\\BackendEvaluation.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
