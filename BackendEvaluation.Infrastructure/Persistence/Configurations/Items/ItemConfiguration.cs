@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
 namespace BackendEvaluation.Infrastructure.Persistence.Configurations;
-public class ItemConfiguration : IEntityTypeConfiguration<Item>
+public class ItemConfiguration : IEntityTypeConfiguration<Product>
 {
-    public void Configure(EntityTypeBuilder<Item> builder)
+    public void Configure(EntityTypeBuilder<Product> builder)
     {
         builder.ToTable("Items", "itm");
         builder.HasKey(c => c.Id);

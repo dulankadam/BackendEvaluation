@@ -62,7 +62,7 @@ public partial class ApplicationDbContext : DbContext, IApplicationDbContext
         base.OnModelCreating(modelBuilder);
     }
 
-    public virtual DbSet<Item> Items { get; set; }
+    public DbSet<Product> Products { get; set; }
 
 
 

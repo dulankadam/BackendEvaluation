@@ -7,7 +7,6 @@ public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest>
 {
     private readonly ILogger _logger;
     private readonly ICurrentUserService _currentUserService;
-    private readonly IIdentityService _identityService;
 
     public LoggingBehaviour(ILogger logger, ICurrentUserService currentUserService)
     {

@@ -3,5 +3,6 @@ public enum UserType
 {
     Admin = 1,
     User = 2,
-    Auditor = 3
+    Auditor = 3,
+    Anonymous = 4
 }
