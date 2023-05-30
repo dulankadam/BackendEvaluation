@@ -1,15 +1,18 @@
 using BackendEvaluation.Infrastructure;
 using BackendEvaluation.Core;
 using Serilog;
+using BackendEvaluation.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 builder.Services
     .AddInfrastructure()
-    .AddCore();
+    .AddCore()
+    .AddDomain();
 
 builder.Host.UseSerilog((context, Configuration) => Configuration.ReadFrom.Configuration(context.Configuration));
 

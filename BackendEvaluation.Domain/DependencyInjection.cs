@@ -3,7 +3,7 @@ namespace BackendEvaluation.Domain;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddCore(this IServiceCollection services)
+    public static IServiceCollection AddDomain(this IServiceCollection services)
     {
         return services;
     }
