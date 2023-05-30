@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "16AtVea9EPAqeDDqciXo9eMYdYfYZ/G6gW3qQy8HeqUkLZEjEzvfbA+Ks03b7BQf7a7heOg7/t7kPfN7YUTvNw==",
+  "dgSpecHash": "+hRWrTXvO84szGYKf4fRNgn8iHh5kj48rjeJjHtGD3VExNFxjSrR60YJnMXNygeM4a4X4em+Ue2lBoLRbGQRCA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Core\\BackendEvaluation.Core.csproj",
   "expectedPackageFiles": [
@@ -13,11 +13,18 @@
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
   ],
   "logs": [
     {

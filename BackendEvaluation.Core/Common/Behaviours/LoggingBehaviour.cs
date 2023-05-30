@@ -2,7 +2,7 @@
 using Serilog;
 using BackendEvaluation.Core.Common.Interfaces;
 
-namespace RD.Core.Common.Behaviours;
+namespace BackendEvaluation.Core.Common.Behaviours;
 public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest>
 {
     private readonly ILogger _logger;

@@ -4,7 +4,7 @@ using BackendEvaluation.Domain.Models.Base;
 using BackendEvaluation.Domain.Models.Item;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-namespace RD.Infrastructure.Persistence;
+namespace BackendEvaluation.Infrastructure.Persistence;
 public partial class ApplicationDbContext : DbContext, IApplicationDbContext
 {
     private readonly ICurrentUserService _currentUserService;
