@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using BackendEvaluation.API.Extensions;
 
 namespace BackendEvaluation.API.Controllers.Base;
+
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]
