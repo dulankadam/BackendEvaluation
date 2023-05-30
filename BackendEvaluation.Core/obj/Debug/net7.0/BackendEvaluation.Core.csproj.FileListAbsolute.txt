@@ -10,3 +10,6 @@ C:\Projects\BackendEvaluation\BackendEvaluation.Core\obj\Debug\net7.0\BackendEva
 C:\Projects\BackendEvaluation\BackendEvaluation.Core\obj\Debug\net7.0\refint\BackendEvaluation.Core.dll
 C:\Projects\BackendEvaluation\BackendEvaluation.Core\obj\Debug\net7.0\BackendEvaluation.Core.pdb
 C:\Projects\BackendEvaluation\BackendEvaluation.Core\obj\Debug\net7.0\ref\BackendEvaluation.Core.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Core\bin\Debug\net7.0\BackendEvaluation.Domain.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.Core\bin\Debug\net7.0\BackendEvaluation.Domain.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.Core\obj\Debug\net7.0\BackendEvaluation.Core.csproj.CopyComplete

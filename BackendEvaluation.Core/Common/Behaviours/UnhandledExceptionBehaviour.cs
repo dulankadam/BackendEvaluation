@@ -1,34 +1,33 @@
 ﻿using MediatR;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace RD.Core.Common.Behaviours
+using Serilog;
+namespace RD.Core.Common.Behaviours;
+public class UnhandledExceptionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
 {
-    public class UnhandledExceptionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    private readonly ILogger _logger;
+
+    public UnhandledExceptionBehaviour(ILogger logger)
     {
-        private readonly ILogger<TRequest> _logger;
+        _logger = logger;
+    }
 
-        public UnhandledExceptionBehaviour(ILogger<TRequest> logger)
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> requestHandlerDelegate)
+    {
+        try
         {
-            _logger = logger;
+            return await requestHandlerDelegate();
         }
-
-        public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
+        catch (Exception ex)
         {
-            try
-            {
-                return await next();
-            }
-            catch (Exception ex)
-            {
-                var requestName = typeof(TRequest).Name;
+            var requestName = typeof(TRequest).Name;
 
-                _logger.LogError(ex, "RD Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
+            _logger.Error(ex, "RD Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
 
-                throw;
-            }
+            throw;
         }
+    }
+
+    Task<TResponse> IPipelineBehavior<TRequest, TResponse>.Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
     }
 }

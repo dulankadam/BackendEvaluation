@@ -1,5 +1,4 @@
 ﻿using BackendEvaluation.Domain.Enum;
-
 namespace BackendEvaluation.Core.Common.Interfaces;
 public interface ICurrentUserService
 {

@@ -55,3 +55,13 @@ C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEval
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\ref\BackendEvaluation.API.dll
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\BackendEvaluation.Core.dll
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\BackendEvaluation.Core.pdb
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\FluentValidation.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\IdentityModel.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\MediatR.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\BackendEvaluation.Domain.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\BackendEvaluation.Domain.pdb

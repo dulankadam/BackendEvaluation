@@ -7,11 +7,11 @@ namespace BackendEvaluation.Core.Common.Behaviours;
 public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
 {
     private readonly Stopwatch _timer;
-    private readonly ILogger<TRequest> _logger;
+    private readonly ILogger _logger;
     private readonly ICurrentUserService _currentUserService;
 
     public PerformanceBehaviour(
-        ILogger<TRequest> logger,
+        ILogger logger,
         ICurrentUserService currentUserService)
     {
         _timer = new Stopwatch();
@@ -35,7 +35,7 @@ public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequ
             var userId = _currentUserService.UserId ?? string.Empty;
             var userName = string.Empty;
 
-            _logger.LogWarning("BackendEvaluation Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@UserName} {@Request}",
+            _logger.Warning("BackendEvaluation Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@UserName} {@Request}",
                 requestName, elapsedMilliseconds, userId, userName, request);
         }
 

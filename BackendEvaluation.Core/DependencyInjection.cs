@@ -1,5 +1,7 @@
-﻿using MediatR;
+﻿using BackendEvaluation.Core.Common.Behaviours;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using RD.Core.Common.Behaviours;
 using System.Reflection;
 
 namespace BackendEvaluation.Core;
