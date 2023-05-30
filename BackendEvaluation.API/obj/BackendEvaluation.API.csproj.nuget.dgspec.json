@@ -312,7 +312,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Core\\BackendEvaluation.Core.csproj": {
+                "projectPath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Core\\BackendEvaluation.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -325,9 +329,33 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Audit.EntityFramework.Core": {
+              "target": "Package",
+              "version": "[21.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Caching.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             }
           },
           "imports": [
