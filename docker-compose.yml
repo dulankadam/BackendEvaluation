@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  backendevaluation.api:
+    image: ${DOCKER_REGISTRY-}backendevaluationapi
+    build:
+      context: .
+      dockerfile: BackendEvaluation.API\Dockerfile
+
+  backendevaluation.identity:
+    image: ${DOCKER_REGISTRY-}backendevaluationidentity
+    build:
+      context: .
+      dockerfile: BackendEvaluation.Identity\Dockerfile
+

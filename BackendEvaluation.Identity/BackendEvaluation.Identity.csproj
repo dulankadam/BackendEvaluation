@@ -3,12 +3,19 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>cefa8bf7-338e-4c01-a302-a07628384fa4</UserSecretsId>
+		<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+		<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Duende.IdentityServer" Version="6.3.0" />
 
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.0" />
+
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets" Version="1.1.0" />
 		<PackageReference Include="Serilog.AspNetCore" Version="6.0.0" />
 	</ItemGroup>
 
