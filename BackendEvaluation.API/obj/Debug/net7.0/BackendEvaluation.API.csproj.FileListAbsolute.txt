@@ -116,3 +116,9 @@ C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.E
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Humanizer.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\System.CodeDom.dll

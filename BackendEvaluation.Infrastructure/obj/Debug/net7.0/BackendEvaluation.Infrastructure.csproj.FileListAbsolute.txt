@@ -15,3 +15,5 @@ C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\
 C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Core.pdb
 C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Domain.pdb
 C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.csproj.CopyComplete
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\bin\Debug\net7.0\BackendEvaluation.Infrastructure.runtimeconfig.json
+C:\Projects\BackendEvaluation\BackendEvaluation.Infrastructure\obj\Debug\net7.0\BackendEvaluation.Infrastructure.genruntimeconfig.cache
