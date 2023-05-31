@@ -9,5 +9,5 @@ public class ModelBase
 
     public DateTime? UpdatedDate { get; set; }
 
-    public string UpdatedUser { get; set; }
+    public string? UpdatedUser { get; set; }
 }
