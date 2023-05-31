@@ -14,10 +14,10 @@ namespace BackendEvaluation.API.Controllers.Product
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ProductListVM> GetProduct(int id)
         {            
-            return (ProductListVM)await Mediator.Send(new GetProductQuery { Id = id});
+            return await Mediator.Send(new GetProductQuery { Id = id});
         }
 
-        [AllowAnonymous]
+        [Authorize]
         [HttpPost("CreateProducts")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Create(CreateProductsCommand command)
@@ -25,15 +25,15 @@ namespace BackendEvaluation.API.Controllers.Product
             return await Mediator.Send(command);
         }
 
-        [AllowAnonymous]
+        [Authorize]
         [HttpPut("EditProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Edit(EditProductsCommand command)
         {
             return await Mediator.Send(command);
         }
-        
-        [AllowAnonymous]
+
+        [Authorize]
         [HttpDelete("DeleteProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Delete(DeleteProductCommand command)

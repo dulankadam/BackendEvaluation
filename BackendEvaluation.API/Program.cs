@@ -5,6 +5,7 @@ using BackendEvaluation.Core.Common.Interfaces;
 using BackendEvaluation.Domain;
 using BackendEvaluation.Infrastructure;
 using BackendEvaluation.Infrastructure.Persistence;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -34,14 +35,6 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
-//builder.Services.AddAuthentication(
-//    options =>
-//    {
-//        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//        options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-//    });
-
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = "Cookies";
@@ -52,17 +45,40 @@ builder.Services.AddAuthentication(options =>
     {
         options.Authority = "https://localhost:5001";
 
-        options.ClientId = "mvc";
-        options.ClientSecret = "BackendEvaluation";
-        options.ResponseType = "code";
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = false,
+            RoleClaimType = "UserRole",
+            NameClaimType = JwtClaimTypes.Name,
 
-        options.SaveTokens = true;
-
-        options.Scope.Add("GetProduct");
-        options.Scope.Add("CreateProducts");
-        options.Scope.Add("EditProducts");
-        options.Scope.Add("DeleteProducts");
+        };
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminScope", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
+
+    });
+
+    options.AddPolicy("UserScope", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
+        policy.RequireClaim("UserRole", "User");
+
+    });
+
+    options.AddPolicy("AuditorScope", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
+        policy.RequireClaim("AuditorRole", "Auditor");
+
+    });
+});
 
 builder.Services
     .AddInfrastructure(Configuration)
