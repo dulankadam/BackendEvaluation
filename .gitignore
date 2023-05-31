@@ -426,11 +426,16 @@ Backend/ROCBN/Api/C:\\Temp\\EPG_PostAPI_Log.txt
 .localhistory/
 BackendEvaluation.API/obj
 BackendEvaluation.API/bin
+BackendEvaluation.Core/obj
+BackendEvaluation.Core/bin
+BackendEvaluation.Domain/obj
+BackendEvaluation.Domain/bin
+BackendEvaluation.Identity/obj
+BackendEvaluation.Identity/bin
+BackendEvaluation.Infrastructure/obj
+BackendEvaluation.Infrastructure/bin
+.vs
+obj
+bin
 
-Backend/Identity.Web/appsettings.pragash.json
-Backend/ROCBN.API/appsettings.pragash.json
 
-Backend/Identity.Web/Identityserver_log.txt
-/Backend/Identity.Web/Identityserver_log.txt
-
-Backend/ROCBN/Api/C:\\Temp\\ChannelReconciliationFiles\\*
