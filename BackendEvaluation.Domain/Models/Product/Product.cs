@@ -1,4 +1,5 @@
 ﻿using BackendEvaluation.Domain.Models.Base;
+
 namespace BackendEvaluation.Domain.Models.Product;
 public class Product : ModelBase
 {

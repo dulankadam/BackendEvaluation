@@ -10,7 +10,6 @@ C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEval
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.AssemblyInfoInputs.cache
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.AssemblyInfo.cs
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.csproj.CoreCompileInputs.cache
-C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\appsettings.json

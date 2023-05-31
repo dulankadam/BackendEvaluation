@@ -21,9 +21,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureAuthService(Configuration);
 
 builder.Host.UseSerilog((context, Configuration) => Configuration.ReadFrom.Configuration(context.Configuration));
-
+builder.Services.AddScoped<RequestLoggingActivityAttribute>();
 builder.Services
-    //.AddInfrastructure(Configuration)
+    .AddInfrastructure(Configuration)
     .AddCore()
     .AddDomain();
 

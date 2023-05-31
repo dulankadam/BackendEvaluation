@@ -1,6 +1,6 @@
-﻿using BackendEvaluation.Domain.Models.Item;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
+using BackendEvaluation.Domain.Models.Product;
 
 namespace BackendEvaluation.Infrastructure.Persistence.Configurations;
 public class ItemConfiguration : IEntityTypeConfiguration<Product>

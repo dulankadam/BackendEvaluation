@@ -1,5 +1,9 @@
 ﻿using BackendEvaluation.API.Controllers.Base;
-using BackendEvaluation.Core.Product;
+using BackendEvaluation.API.Controllers.Goods;
+using BackendEvaluation.Core.Goods.Command;
+using BackendEvaluation.Core.Goods.Query;
+using BackendEvaluation.Domain.Models.Product;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendEvaluation.API.Controllers.Product
@@ -8,31 +12,31 @@ namespace BackendEvaluation.API.Controllers.Product
     {
         [HttpGet("Get")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<Product> GetProduct() => await Mediator.Send(new GetProductQuery());
-
-        [HttpGet("Get/{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<Product> GetProductById() => await Mediator.Send(new GetProductQuery());
+        public async Task<ProductListVM> GetProduct(GetProductQuery product)
+        {
+            return (ProductListVM)await Mediator.Send(product);
+        }
 
         [HttpPost("CreateProducts")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<int> Create(CreateProductsCommand command)
+        public async Task<bool> Create(CreateProductsCommand command)
         {
             return await Mediator.Send(command);
         }
 
-        [HttpPost("EditProduct")]
+        [HttpPut("EditProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<Product> Edit(CreateProductsCommand command)
+        public async Task<bool> Edit(EditProductsCommand command)
         {
             return await Mediator.Send(command);
         }
-
-        [HttpPut("DeleteProduct/{id}")]
+        
+        [AllowAnonymous]
+        [HttpDelete("DeleteProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(DeleteProductCommand command)
         {
-            return (bool)await Mediator.Send(id);
+            return (bool)await Mediator.Send(command);
         }
     }
 }

@@ -62,7 +62,7 @@ public partial class ApplicationDbContext : DbContext, IApplicationDbContext
         base.OnModelCreating(modelBuilder);
     }
 
-    public DbSet<Product> products { get; set; }
+    public DbSet<Product> Products { get; set; }
 
     private string GetUser()
     {
