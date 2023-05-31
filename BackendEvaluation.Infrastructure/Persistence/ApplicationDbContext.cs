@@ -1,7 +1,7 @@
 using Audit.EntityFramework;
 using BackendEvaluation.Core.Common.Interfaces;
 using BackendEvaluation.Domain.Models.Base;
-using BackendEvaluation.Domain.Models.Item;
+using BackendEvaluation.Domain.Models.Product;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 namespace BackendEvaluation.Infrastructure.Persistence;
@@ -62,9 +62,7 @@ public partial class ApplicationDbContext : DbContext, IApplicationDbContext
         base.OnModelCreating(modelBuilder);
     }
 
-    public DbSet<Product> Products { get; set; }
-
-
+    public DbSet<Product> products { get; set; }
 
     private string GetUser()
     {

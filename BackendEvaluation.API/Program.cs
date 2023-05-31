@@ -1,11 +1,16 @@
+using BackendEvaluation.API.Extensions;
 using BackendEvaluation.Core;
 using BackendEvaluation.Domain;
 using BackendEvaluation.Infrastructure;
 using Serilog;
+using System.Configuration;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+IConfiguration Configuration = new ConfigurationBuilder()
+                            .AddJsonFile("appsettings.json")
+                            .Build();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -13,13 +18,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services
-    .AddInfrastructure()
-    .AddCore()
-    .AddDomain();
+builder.Services.ConfigureAuthService(Configuration);
 
 builder.Host.UseSerilog((context, Configuration) => Configuration.ReadFrom.Configuration(context.Configuration));
+
+builder.Services
+    //.AddInfrastructure(Configuration)
+    .AddCore()
+    .AddDomain();
 
 var app = builder.Build();
 

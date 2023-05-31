@@ -113,3 +113,7 @@ C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\refint\Back
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.pdb
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\BackendEvaluation.API.genruntimeconfig.cache
 C:\Projects\BackendEvaluation\BackendEvaluation.API\obj\Debug\net7.0\ref\BackendEvaluation.API.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Projects\BackendEvaluation\BackendEvaluation.API\bin\Debug\net7.0\System.Memory.Data.dll

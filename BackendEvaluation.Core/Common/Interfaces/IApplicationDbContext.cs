@@ -1,4 +1,3 @@
-using BackendEvaluation.Domain.Models.Item;
 using Microsoft.EntityFrameworkCore;
 namespace BackendEvaluation.Core.Common.Interfaces
 {
@@ -7,6 +6,6 @@ namespace BackendEvaluation.Core.Common.Interfaces
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken));
         DbSet<TModel> Set<TModel>() where TModel : class;
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> products { get; set; }
     }
 }
