@@ -56,14 +56,14 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("AdminScope", policy =>
+    options.AddPolicy("AdminPolicy", policy =>
     {
         policy.RequireAuthenticatedUser();
         policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
 
     });
 
-    options.AddPolicy("UserScope", policy =>
+    options.AddPolicy("UserPolicy", policy =>
     {
         policy.RequireAuthenticatedUser();
         policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
@@ -71,7 +71,7 @@ builder.Services.AddAuthorization(options =>
 
     });
 
-    options.AddPolicy("AuditorScope", policy =>
+    options.AddPolicy("AuditorPolicy", policy =>
     {
         policy.RequireAuthenticatedUser();
         policy.RequireClaim("scope", new string[] { "BackendEvaluation.Api", "role", "openid", "profile" });
