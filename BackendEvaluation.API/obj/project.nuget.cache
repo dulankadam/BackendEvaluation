@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zlXZ5zxWU0FiY4hzEPSd7lc+gunCz40cUKpN5jZcGuBaBV0o+WD93m6e1+g14arqX+M4xURNSAn84ZcMPRAm/w==",
+  "dgSpecHash": "/zcpfDRoo+2y3kDwNh4WhGSO1nA5j6R3/37EFTl685HHCAMXfLyRyaGhw2I/z8WDAFJuJSuSQwMGvIv/gJKkNQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.API\\BackendEvaluation.API.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.5\\microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\7.0.5\\microsoft.aspnetcore.authentication.openidconnect.7.0.5.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
@@ -99,6 +100,7 @@
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog.sinks.rollingfile\\3.3.0\\serilog.sinks.rollingfile.3.3.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\simpleidserver.openidconnect\\3.0.4\\simpleidserver.openidconnect.3.0.4.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

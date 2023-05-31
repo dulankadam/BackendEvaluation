@@ -1,4 +1,5 @@
-﻿using Duende.IdentityServer.Models;
+﻿using Duende.IdentityServer;
+using Duende.IdentityServer.Models;
 
 namespace BackendEvaluation.Identity
 {
@@ -14,23 +15,68 @@ namespace BackendEvaluation.Identity
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-            new ApiScope("scope1"),
-            new ApiScope("scope2"),
+                new ApiScope("GetProduct","Get Product By Id"),
+                new ApiScope("CreateProducts","Create Products"),
+                new ApiScope("EditProducts","Edit Products"),
+                new ApiScope("DeleteProducts","Delete Products"),
             };
 
         public static IEnumerable<Client> Clients =>
-            new Client[]
+            new List<Client>
             {
-            // m2m client credentials flow client
             new Client
             {
-                ClientId = "m2m.client",
-                ClientName = "Client Credentials Client",
-
+                ClientId = "GetProduct",
+                ClientName = "Get Product By Id",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
-                ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
+                ClientSecrets = { new Secret("BackendEvaluation".Sha256()) },
+                AllowedScopes = { "GetProduct" }
+            },
+            new Client
+            {
+                ClientId = "CreateProducts",
+                ClientName = "Create Products",
+                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                ClientSecrets = { new Secret("BackendEvaluation".Sha256()) },
+                AllowedScopes = { "CreateProducts" }
+            },
+            new Client
+            {
+                ClientId = "EditProducts",
+                ClientName = "Edit Products",
+                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                ClientSecrets = { new Secret("BackendEvaluation".Sha256()) },
+                AllowedScopes = { "EditProducts" }
+            },
+            new Client
+            {
+                ClientId = "DeleteProducts",
+                ClientName = "Delete Products",
+                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                ClientSecrets = { new Secret("BackendEvaluation".Sha256()) },
+                AllowedScopes = { "DeleteProducts" }
+            },
+            new Client
+            {
+                ClientId = "mvc",
+                ClientSecrets = { new Secret("BackendEvaluation".Sha256()) },
 
-                AllowedScopes = { "scope1" }
+                AllowedGrantTypes = GrantTypes.Code,
+            
+                // where to redirect to after login
+                RedirectUris = { "https://localhost:5002/signin-oidc" },
+
+                // where to redirect to after logout
+                PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc" },
+
+                AllowOfflineAccess = true,
+
+                AllowedScopes = new List<string>
+                {
+                    IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile,
+                    "GetProduct"
+                }
             },
 
             // interactive client using code flow + pkce
@@ -46,7 +92,11 @@ namespace BackendEvaluation.Identity
                 PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
-                AllowedScopes = { "openid", "profile", "scope2" }
+                 AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
+                    }
             },
             };
     }

@@ -297,6 +297,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.1"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
         "type": "package",
         "compile": {
@@ -1635,6 +1654,18 @@
           }
         }
       },
+      "SimpleIdServer.OpenIdConnect/3.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "7.0.5"
+        },
+        "compile": {
+          "lib/net7.0/SimpleIdServer.OpenIdConnect.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/SimpleIdServer.OpenIdConnect.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -2637,6 +2668,21 @@
         "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
         "microsoft.aspnetcore.authentication.jwtbearer.7.0.5.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/7.0.5": {
+      "sha512": "mpDo9uDsl2Ere26+Cl2vl3eaqirSD6QbzZltW4jP+jay9mZfi+P5hKQ9Sg+TwiotmpyBpRyGVDxVmEkoE+t6jA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.xml",
+        "microsoft.aspnetcore.authentication.openidconnect.7.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.openidconnect.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
@@ -4676,6 +4722,18 @@
         "serilog.sinks.rollingfile.nuspec"
       ]
     },
+    "SimpleIdServer.OpenIdConnect/3.0.4": {
+      "sha512": "Gvdlz1LlEYsk6K640+XIumcFTdoF5MJcUYSS1egTk+B9eRs3Yv9l6A7hynASDRxDZTp6obcHIAbNm0fIPNZzig==",
+      "type": "package",
+      "path": "simpleidserver.openidconnect/3.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net7.0/SimpleIdServer.OpenIdConnect.dll",
+        "simpleidserver.openidconnect.3.0.4.nupkg.sha512",
+        "simpleidserver.openidconnect.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -6422,6 +6480,7 @@
       "Serilog.Settings.Configuration >= 7.0.0",
       "Serilog.Sinks.Console >= 4.1.0",
       "Serilog.Sinks.File >= 5.0.0",
+      "SimpleIdServer.OpenIdConnect >= 3.0.4",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -6533,6 +6592,10 @@
           "Serilog.Sinks.File": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "SimpleIdServer.OpenIdConnect": {
+            "target": "Package",
+            "version": "[3.0.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
