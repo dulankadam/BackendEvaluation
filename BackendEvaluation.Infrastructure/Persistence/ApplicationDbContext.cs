@@ -11,6 +11,11 @@ public partial class ApplicationDbContext : DbContext, IApplicationDbContext
     private static readonly DbContextHelper _helper = new DbContextHelper();
     private readonly IAuditDbContext _auditContext;
 
+    public ApplicationDbContext()
+    {
+        _auditContext = new DefaultAuditContext(this);
+        _helper.SetConfig(_auditContext);
+    }
     public ApplicationDbContext(ICurrentUserService currentUserService)
     {
         _currentUserService = currentUserService;

@@ -1,7 +1,11 @@
+using BackendEvaluation.Api.Services;
 using BackendEvaluation.API.Extensions;
 using BackendEvaluation.Core;
+using BackendEvaluation.Core.Common.Interfaces;
 using BackendEvaluation.Domain;
 using BackendEvaluation.Infrastructure;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using System.Configuration;
 
@@ -21,6 +25,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureAuthService(Configuration);
 
 builder.Host.UseSerilog((context, Configuration) => Configuration.ReadFrom.Configuration(context.Configuration));
+builder.Services.AddScoped<RequestLoggingActivityAttribute>();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services
     .AddInfrastructure(Configuration)

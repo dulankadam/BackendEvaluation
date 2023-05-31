@@ -2,7 +2,6 @@
 using BackendEvaluation.API.Controllers.Goods;
 using BackendEvaluation.Core.Goods.Command;
 using BackendEvaluation.Core.Goods.Query;
-using BackendEvaluation.Domain.Models.Product;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,13 +9,15 @@ namespace BackendEvaluation.API.Controllers.Product
 {
     public class ProductController : BaseApiController
     {
-        [HttpGet("Get")]
+        [AllowAnonymous]
+        [HttpGet("Get/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ProductListVM> GetProduct(GetProductQuery product)
-        {
-            return (ProductListVM)await Mediator.Send(product);
+        public async Task<ProductListVM> GetProduct(int id)
+        {            
+            return (ProductListVM)await Mediator.Send(new GetProductQuery { Id = id});
         }
 
+        [AllowAnonymous]
         [HttpPost("CreateProducts")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Create(CreateProductsCommand command)
@@ -24,6 +25,7 @@ namespace BackendEvaluation.API.Controllers.Product
             return await Mediator.Send(command);
         }
 
+        [AllowAnonymous]
         [HttpPut("EditProduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Edit(EditProductsCommand command)
@@ -36,7 +38,8 @@ namespace BackendEvaluation.API.Controllers.Product
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<bool> Delete(DeleteProductCommand command)
         {
-            return (bool)await Mediator.Send(command);
+            var result = await Mediator.Send(command);
+            return true;
         }
     }
 }

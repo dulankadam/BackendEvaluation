@@ -9,11 +9,9 @@ namespace BackendEvaluation.Core.Goods.Command;
 public class EditProductsCommandHandler : IRequestHandler<EditProductsCommand, bool>
 {
     private readonly IApplicationDbContext _context;
-    private readonly IIdentityService _identityService;
-    public EditProductsCommandHandler(IApplicationDbContext context, IIdentityService identityService)
+    public EditProductsCommandHandler(IApplicationDbContext context)
     {
         _context = context;
-        _identityService = identityService;
     }
     public async Task<bool> Handle(EditProductsCommand request, CancellationToken cancellationToken)
     {
@@ -27,7 +25,6 @@ public class EditProductsCommandHandler : IRequestHandler<EditProductsCommand, b
             if (product != null)
             {
                 product.UpdatedDate = DateTime.Now;
-                product.UpdatedUser = _identityService.CurrentUser().Result.IdentifierNumber;
                 product.Name = request.EditProducts.Name;
                 product.Description = request.EditProducts.Description;
                 product.Quantity = request.EditProducts.Quantity;

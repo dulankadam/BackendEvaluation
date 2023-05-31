@@ -11,6 +11,10 @@ public class RequestLoggingActivityAttribute : ActionFilterAttribute
     private readonly ICurrentUserService _currentUserService;
     private readonly IConfiguration _configuration;
 
+    public RequestLoggingActivityAttribute()
+    {
+
+    }
     public RequestLoggingActivityAttribute(IApplicationDbContext context,
         ICurrentUserService currentUserService,
         IConfiguration configuration)
@@ -22,10 +26,10 @@ public class RequestLoggingActivityAttribute : ActionFilterAttribute
 
     public override void OnActionExecuting(ActionExecutingContext filterContext)
     {
-        var enableActivityLog = _configuration.GetValue<bool>("EnableActivityLog");
+        //var enableActivityLog = _configuration.GetValue<bool>("EnableActivityLog");
 
-        if (!enableActivityLog)
-            return;
+        //if (!enableActivityLog)
+        //    return;
 
         var sb = new StringBuilder();
         foreach (var key in filterContext.RouteData.Values.Keys)
