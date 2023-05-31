@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+hRWrTXvO84szGYKf4fRNgn8iHh5kj48rjeJjHtGD3VExNFxjSrR60YJnMXNygeM4a4X4em+Ue2lBoLRbGQRCA==",
+  "dgSpecHash": "/2RG6+HgFsdI5qbNdG0QKm4/bJ7wPuJ5a7NPymvJrNRs6qWIRuKcczqz9E26riD/OwRBDdiVqK4iqNGZTE0/lg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\BackendEvaluation\\BackendEvaluation.Core\\BackendEvaluation.Core.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,8 @@
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\identitymodel\\6.1.0\\identitymodel.6.1.0.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
@@ -26,16 +26,5 @@
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\DamithWeerawardanaBI\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.0.1 was resolved.",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
