@@ -30,7 +30,7 @@ public class EditProductsCommandHandler : IRequestHandler<EditProductsCommand, b
                 product.Quantity = request.EditProducts.Quantity;
             };
             _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
             return true;
         }
         catch (Exception ex)
