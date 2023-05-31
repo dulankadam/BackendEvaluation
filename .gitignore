@@ -425,6 +425,7 @@ Backend/ROCBN/Api/C:\\Temp\\EPG_PostAPI_Log.txt
 # Local History for Visual Studio
 .localhistory/
 BackendEvaluation.API\\obj
+BackendEvaluation.API//obj
 BackendEvaluation.API\\bin
 BackendEvaluation.Core\\obj
 BackendEvaluation.Core\\bin
@@ -440,4 +441,3 @@ obj
 bin
 
 
-/BackendEvaluation.API/obj/Debug/net7.0/BackendEvaluation.API.csproj.AssemblyReference.cache
