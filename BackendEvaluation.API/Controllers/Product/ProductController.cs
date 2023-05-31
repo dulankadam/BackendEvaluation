@@ -10,7 +10,7 @@ namespace BackendEvaluation.API.Controllers.Product
     public class ProductController : BaseApiController
     {
         [AllowAnonymous]
-        [HttpGet("Get/{id}")]
+        [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ProductListVM> GetProduct(int id)
         {            

@@ -17,11 +17,11 @@ public class GetProductQueryHandler : IRequestHandler<GetProductQuery, ProductLi
     {
         try
         {
-            var productList = new ProductListVM();
+            ProductListVM productList = new ProductListVM();
             var result = await _context.Products.Where(q => q.Id == request.Id).ToListAsync();
             if (result.Count > 0)
             {
-                productList.products.AddRange(result);
+                productList.products = result;
             }
             return productList;
         }
